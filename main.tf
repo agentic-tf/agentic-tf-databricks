@@ -117,7 +117,7 @@ resource "azurerm_monitor_diagnostic_setting" "databricks" {
     category = "sqlPermissions"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
   }
 }
